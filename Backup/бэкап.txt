@@ -1,0 +1,7 @@
+перейти в папку постгрес cd "C:\Program Files\PostgreSQL\16\bin"
+удалить старую бд cd "C:\Program Files\PostgreSQL\16\bin"
+пароль постгрес: 08022005
+восстановить базу pg_restore -h localhost -p 5432 -U postgres -d bus_coursework -v "C:\Users\admin\Desktop\учеба\5 семак\БД\Bus_coursework\bus_coursework"
+проверить psql -h localhost -p 5432 -U postgres -d bus_coursework
+если ошибка то создать бд createdb -U postgres bus_coursework
+показать содержимое бэкап pg_restore -l "C:\Users\admin\Desktop\учеба\5 семак\БД\Bus_coursework\bus_coursework"
